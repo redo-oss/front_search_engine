@@ -1,0 +1,29 @@
+<div class="menu">
+  <div class="left">
+    <a href="">
+      <img src="assets/images/logo.png" alt="flower" />
+    </a>
+  </div>
+  <div class="right">
+    <ul class="ul">
+      <li [routerLink]="'/'">Home</li>
+      <li [routerLink]="'/neural-network'">Neural Network</li>
+      <li [routerLink]="'/computer-vision'">Computer Vision</li>
+      <li [routerLink]="'/about-us'">About us</li>
+      
+    </ul>
+    <div class="nav-bar">
+        <i class="pi pi-bars"></i>
+      </div>
+  </div>
+</div>
+<div class="slider">
+  <p-carousel [value]="images">
+    <ng-template let-image pTemplate="item">
+      <div class="items">
+        <img [src]="image" alt="flower" />
+      </div>
+      
+    </ng-template>
+</p-carousel>
+</div>

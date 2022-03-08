@@ -1,0 +1,55 @@
+<div class="section">
+    <div class="search">
+        <div class="input" *ngIf="name ==''">
+            <label for="upload">search</label>
+            <input type="file" accept="image/*" id="upload" (change)="onChange($event.target)">
+        </div>
+        <div class="img" *ngIf="name!=''">
+            <img [src]="imageUrl" [alt]="name">
+            <span>{{name}} </span>
+
+        </div>
+        <button class="btn-search" type="button">
+            <i class="pi pi-camera" (click)="Upload()"></i>
+            <i class="pi pi-times" (click)="cancel()" *ngIf="name!=''"></i>
+        </button>
+    </div>
+</div>
+<div class="result" *ngIf="image.class.length">
+    <div class="right">
+        <div class="img" >
+            <img [src]="image.src" alt="product.name" class="product-image" />
+        </div>
+    </div>
+    <div class="left">
+        <h4>Boxes : {{image.boxes}} </h4>
+        <h4>Classes or object In the Image</h4>
+        <div>
+            <ul>
+                <li *ngFor="let class of image.class"> {{class}} </li>
+            </ul>
+
+        </div>
+
+    </div>
+
+
+</div>
+<div *ngIf="image.class.length"  class="images">
+    <div *ngFor="let img of image_similaire?.images">
+        <img [src]="img" alt="image" *ngIf="img">
+    </div>
+</div>
+
+
+<!-- <div class="grid" *ngIf="image.class.length">
+            <div class="col-3">
+                <div class="product-item">
+                    <div class="product-item-content">
+                        <div class="p-mb-3">
+                            <img [src]="image.src" alt="product.name" class="product-image" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>  -->

@@ -1,0 +1,134 @@
+.product-item {
+  .product-item-content {
+    border: 1px solid var(--surface-d);
+    border-radius: 3px;
+    margin: 0.3rem;
+    text-align: center;
+    padding: 2rem 0;
+  }
+
+  .product-image {
+    width: 50%;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+  }
+}
+.section {
+  margin: 1em 0;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  .search {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: #f5f5f5;
+    border-radius: 38px;
+    box-shadow: 0 0 8px #f3eaea;
+    height: 65px;
+    width: 44%;
+    .input {
+      width: 80%;
+      input {
+        display: none;
+      }
+      label {
+        padding: 15px;
+        margin: 0px;
+        border: none;
+        outline: none;
+        border-radius: 20px;
+        width: 80%;
+        height: 80%;
+        background-color: unset;
+        font-size: 18px;
+        cursor: pointer;
+      }
+    }
+    .img {
+      width: 80%;
+      height: 65px;
+      display: flex;
+      flex-direction: row;
+      justify-content: start;
+      align-items: center;
+      padding: 0 10px;
+      img {
+        width: 30px;
+        height: 30px;
+        margin: 0 15px;
+      }
+    }
+
+    .btn-search {
+      padding: 10px;
+      margin: 0 5px;
+      border: none;
+      outline: none;
+      width: 18%;
+      height: 80%;
+      background-color: unset;
+      cursor: pointer;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      i {
+        margin: 0 10px;
+        color: rgb(114, 170, 243);
+        cursor: pointer;
+      }
+    }
+  }
+}
+.result {
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  align-items: start;
+  width: 100%;
+  padding: 3em;
+  .left {
+    width: auto;
+    margin: 0 10px;
+    h4 {
+      margin: 0 !important;
+      margin-bottom: 5px !important;
+    }
+    ul {
+      margin: 0;
+      li {
+        margin: 5px;
+      }
+    }
+  }
+  .right {
+    width: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .im {
+      width: 60px;
+      height: 60px;
+      img {
+        width: 100%;
+        height: 100%;
+      }
+    }
+  }
+}
+.images {
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  align-items: center;
+  height: auto;
+  width: 100%;
+  flex-wrap: wrap;
+  img {
+    height: 130px;
+    width: 140px;
+    margin-left: 2em;
+  }
+}
